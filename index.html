@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAS Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Css Reset */
+        body{
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/a1.jpg');
+            background-size: cover;
+            color: white;
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            /*border: 2px solid red;*/
+        }
+        .left img{
+            width: 80px;
+            height: 50px;
+            filter: invert(100%);
+        }
+        .left div{
+            line-height: 12px;
+            font-size: 12.5px;
+            text-align: center;
+        }
+        .center{
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+            /*border: 2px solid white;*/
+
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 35px;
+            /*border: 2px solid blue;*/
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn{
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0px 8px;
+            padding: 4px 14px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 13.5px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(39, 37, 37);
+        }
+        .container{
+            border: 2px solid white;
+            margin: 100px 70px;
+            padding: 30px 30px;
+            width: 33%;
+            border-radius: 15px;
+
+        }
+        .form-group input{
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            display: block;
+            width: 350px;
+            margin: 8.5px auto;
+            padding: 1px;
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 21px;
+            margin-bottom: 27px;
+        }
+        .container button{
+            display: block;
+            width: 70%;
+            background-color: black;
+            margin: 24px auto;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left Div For Logo -->
+        <div class="left">
+            <img src="img/a2.png" alt="">
+            <div>RAS Fitness</div>
+        </div>
+        <!-- Center Div For Nav Menu -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right Div For Search Or Buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Kolkata.</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your City">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter Your Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
